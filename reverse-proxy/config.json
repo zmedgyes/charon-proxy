@@ -1,0 +1,8 @@
+{
+    "logdir": "./logs",
+    "proxyUpdateInterval": 10000,
+
+    "database":{
+        "path": "../database.db"
+    }
+}

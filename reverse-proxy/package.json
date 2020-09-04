@@ -1,0 +1,19 @@
+{
+  "name": "reverse-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zsolt Medgyesi",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "http-proxy": "^1.18.1",
+    "nconf": "^0.10.0",
+    "sqlite3": "^5.0.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  }
+}
