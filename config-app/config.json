@@ -1,0 +1,8 @@
+{
+    "logdir": "./logs",
+    "port": 8080,
+    "ipfilter":[],
+    "database":{
+        "path": "../database.db"
+    }
+}
