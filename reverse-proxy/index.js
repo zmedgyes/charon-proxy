@@ -67,6 +67,13 @@ const addProxy = (localPort, target, callback) => {
     forwardRules[localPort] = Object.assign(target, {
         proxy: httpProxy.createProxyServer({ target: target })
     });
+
+    forwardRules[localPort].proxy.on('error', function (err, req, res) {
+        res.writeHead(500, {
+            'Content-Type': 'text/plain'
+        });
+        res.end('Service currently unavailable.');
+    });
     forwardRules[localPort].proxy.listen(localPort);
     async.setImmediate(callback);
 }
