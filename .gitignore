@@ -3,3 +3,4 @@ reverse-proxy/node_modules/
 config-app/node_modules/
 reverse-proxy/config.local.json
 config-app/config.local.json
+misc/release/
