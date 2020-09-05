@@ -41,7 +41,7 @@ fs.existsSync(logDir) || fs.mkdirSync(logDir)
 const logger = winston.createLogger({
 	transports: [
 		new winston.transports.DailyRotateFile({
-			level: 'debug',
+			level: 'info',
 
 			format: winston.format.combine(
 				winston.format.timestamp({
